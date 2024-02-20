@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>
+            JvaScript Validation Form</h2>
+        <div class="Validation">
+            <div class="firstName">
+                <form>
+                    <label for="name">Name:-</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Name">
+                </form>
+            </div>
+            <div class="firstAge">
+                <form>
+                    <label for="age">Age:-</label>
+                    <input type="number" name="age" id="age" placeholder="Enter Age">
+                </form>
+            </div>
+            <div class="firstAddress">
+                <form>
+                    <label for="address">Address:-</label>
+                    <input type="text" name="address" id="address" placeholder="Enter Address">
+                </form>
+            </div>
+            <div class="firstEmail">
+                <form >
+                    <label for="email">Email:-</label>
+                    <input type="text" name="email" id="email" placeholder="Enter Email">
+                </form>
+            </div>
+            <button type="submit" id="submit" onclick="AddData()">Add Data</button>
+            <button type="submit" id="update">Update</button>
+        </div>
+        <hr>
+        <div class="table">
+            <table id="newTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Address</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
